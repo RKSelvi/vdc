@@ -30,4 +30,7 @@ Write-Host "Starting the script for tearing down Shared Services"
 
 ## Run the cleanup script so that no values are retained in code for the config files
 Write-Host "Executing the cleanup script"
+
 ./Orchestration/OrchestrationService/Cleanup_Script.ps1
+
+Write-Host "The deployment was succesfull if: Exit code $LASTEXITCODE == 0" -Verbose
